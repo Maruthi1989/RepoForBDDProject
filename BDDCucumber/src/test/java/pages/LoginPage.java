@@ -45,6 +45,8 @@ public class LoginPage
 		Password.sendKeys(password);
 	}
 	
+	//This method will click on the submit button....
+	
 	public void clickSubmit()
 	{
 		highlightElement(submit);
