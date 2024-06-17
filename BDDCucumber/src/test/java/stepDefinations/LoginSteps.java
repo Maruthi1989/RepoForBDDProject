@@ -3,6 +3,7 @@ package stepDefinations;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
 import pages.LoginPage;
@@ -25,6 +26,12 @@ public class LoginSteps
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 	}
+	
+	@After
+    public void tearDown()
+    {
+    	driver.close();
+    }
 	
 	
 	@Given("User is on the login page")
