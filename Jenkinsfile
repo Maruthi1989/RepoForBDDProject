@@ -3,7 +3,7 @@ pipeline
    agent any
    stages
    {
-    stage('Build')
+    stage(Build)
     {
       steps
       {
@@ -12,7 +12,7 @@ pipeline
       }  
     } 
     
-    stage('Test')
+    stage(Test)
     { 
       steps
       {
@@ -21,7 +21,7 @@ pipeline
       }   
     }
     
-    stage('compile')
+    stage(compile)
     {
       steps
       {
@@ -30,7 +30,7 @@ pipeline
       }  
     }
     
-    stage('install')
+    stage(install)
     {
       
       steps
